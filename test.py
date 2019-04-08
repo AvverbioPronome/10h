@@ -57,8 +57,8 @@ for i in range(points):
 
 ax.set_title('Barnsley fern fractal')
 ax.scatter(X,Y,color='green',marker='s',s=10)
-plt.show()
-
+#plt.show()
+plt.savefig("fern.png")
 
 
 
