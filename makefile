@@ -1,5 +1,5 @@
 OUTPUT_DIR = public
-FILES = $(patsubst %.ipynb,$(OUTPUT_DIR)/%.html,$(wildcard *.ipynb))
+FILES = $(sort $(patsubst %.ipynb,$(OUTPUT_DIR)/%.html,$(wildcard *.ipynb)))
 
 all: $(FILES) $(OUTPUT_DIR)/index.html
 
