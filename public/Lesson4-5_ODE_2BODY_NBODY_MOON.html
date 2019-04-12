@@ -13319,8 +13319,8 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&lt;matplotlib.lines.Line2D at 0x7f71dac6d668&gt;,
- &lt;matplotlib.lines.Line2D at 0x7f71dac6def0&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x7f141534b518&gt;,
+ &lt;matplotlib.lines.Line2D at 0x7f141534bda0&gt;]</pre>
 </div>
 
 </div>
@@ -13617,7 +13617,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.legend.Legend at 0x7f71da8c5438&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7f1414fc96a0&gt;</pre>
 </div>
 
 </div>
@@ -13651,18 +13651,12 @@ div#notebook {
     <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;sun&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;earth&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;moon&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">}</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">sol</span><span class="p">[:,</span><span class="n">d</span><span class="p">[</span><span class="n">a</span><span class="p">]]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="n">d</span><span class="p">[</span><span class="n">b</span><span class="p">]])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">1</span><span class="o">+</span><span class="n">d</span><span class="p">[</span><span class="n">a</span><span class="p">]]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">1</span><span class="o">+</span><span class="n">d</span><span class="p">[</span><span class="n">b</span><span class="p">]])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
-
-<span class="n">sun_moon_distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">8</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">9</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">([</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">8</span><span class="p">],</span> <span class="n">sol</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">9</span><span class="p">]])</span>
-<span class="n">earth_moon_distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">8</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">5</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">9</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> 
-<span class="n">sun_earth_distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">4</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">sol</span><span class="p">[:,</span><span class="mi">5</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> 
 <span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">distance</span><span class="p">(</span><span class="s2">&quot;sun&quot;</span><span class="p">,</span> <span class="s2">&quot;moon&quot;</span><span class="p">),</span> <span class="n">t</span><span class="p">,</span> <span class="n">distance</span><span class="p">(</span><span class="s2">&quot;sun&quot;</span><span class="p">,</span> <span class="s2">&quot;earth&quot;</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distance fron Sun&quot;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Moon&quot;</span><span class="p">,</span> <span class="s2">&quot;Earth&quot;</span><span class="p">])</span>
 <span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
-<span class="c1">#ax.plot(t, sun_moon_distance-sun_earth_distance)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">distance</span><span class="p">(</span><span class="s2">&quot;earth&quot;</span><span class="p">,</span> <span class="s2">&quot;moon&quot;</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Earth-Moon distance&quot;</span><span class="p">)</span>
 <span class="c1">#ax.set_ylim(0, 1.10*ul)</span>
@@ -13704,6 +13698,19 @@ div#notebook {
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
